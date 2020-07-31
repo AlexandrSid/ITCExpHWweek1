@@ -5,4 +5,14 @@ package com.company.lesson4;
  *
  */
 public class Censor {
+    public static void main(String[] args) {
+        //"на вход некую строку", предположим, что имелся в виду args[0]
+        String test = "бяка мать бяка а ну иди сюда бяка а ну решил ко мне лезть ты бяка бяка твою а ну иди сюда попробуй меня бяка я тебя сам бяка бяка бяка...";
+        method(test);
+
+    }
+
+    private static void method(String arg) {
+        System.out.println(arg.replaceAll("бяка", "вырезано цензурой"));
+    }
 }
