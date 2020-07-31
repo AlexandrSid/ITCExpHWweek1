@@ -9,7 +9,9 @@ public class Drink {
         this.cost = cost;
     }
 
-    public Drink() {
+    public Drink() {//проинициализировал пустыми значениями чтобы не усложнять логику вывода меню обработкой null, ай-ай-ай
+        this.cost=0;
+        this.name="";
     }
 
     public String getName() {
